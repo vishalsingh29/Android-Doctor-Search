@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PractoSearch</string>
+    <string name="location">Location</string>
+    <string name="speciality">Speciality</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_results">SearchResults</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_doctor">Doctor</string>
+    <string name="title_activity_doc_info">DocInfo</string>
+    <string name="title_activity_index">Index</string>
+</resources>

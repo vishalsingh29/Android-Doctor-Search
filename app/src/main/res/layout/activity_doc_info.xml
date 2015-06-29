@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/NameOfDoctor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_below="@+id/NameOfDoctor"
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/DoctorSpecialization"
+        android:layout_below="@id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/DoctorSpecialization"
+        android:id="@+id/DoctorPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/DoctorPhone"
+        android:id="@+id/DoctorExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/DoctorExperience"
+        android:id="@+id/DoctorRecommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/DoctorRecommendations"
+        android:id="@+id/DoctorArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/DoctorArea"
+        android:id="@+id/DoctorCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@+id/DoctorCity"
+        android:id="@+id/callButton"
+        android:text="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/DoctorCity"
+        android:layout_toRightOf="@+id/callButton"
+        android:id="@+id/appointment"
+        android:text="Book Appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/clinicsym"
+        android:id="@+id/clinicImage"
+        android:layout_below="@+id/callButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:src="@drawable/doctor"
+        android:id="@+id/doctorImage"
+        android:layout_below="@+id/NameOfDoctor"
+        android:layout_toRightOf="@+id/appointment"
+        android:layout_width="80dp"
+        android:layout_height="120dp" />
+    <ListView
+        android:layout_marginTop="10dp"
+        android:dividerHeight="3sp"
+        android:layout_below="@+id/clinicImage"
+        android:id="@+id/clinics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"></ListView>
+    <ImageView
+        android:layout_below="@+id/clinics"
+        android:id="@+id/educationIcon"
+        android:src="@drawable/education"
+        android:layout_width="50dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/appointment"
+        android:layout_toRightOf="@+id/educationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clinics"/>
+    <TextView
+        android:id="@+id/Doceducations"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/clinics"
+        android:layout_toRightOf="@+id/educationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp" />
+
+
+</RelativeLayout>
